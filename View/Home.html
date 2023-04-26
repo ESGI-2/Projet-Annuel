@@ -11,8 +11,8 @@
 <body>
     <div class="container">
         <h1 class="title">Générateur de Mot de Passe</h1>
-        <h3 class="displayPwd">Mot de Passe</h3>
-        <form class="form">
+        <h3 class="displayPwd" id="displayPwd">Mot de Passe</h3>
+        <form id="generatorForm" class="form">
             <!--! Longueur mot de passe -->
             <label for="characterAmountNumber">Nombre de charactères :</label>
             <div class="characterAmount">
@@ -21,8 +21,8 @@
             </div>
 
             <!--! Ajout majuscules -->
-            <label for="upperCase">Majuscules :</label>
-            <input type="checkbox" id="upperCase">
+            <label for="uppercase">Majuscules :</label>
+            <input type="checkbox" id="uppercase">
 
             <!--! Ajout nombres -->
             <label for="numbers">Nombres :</label>
