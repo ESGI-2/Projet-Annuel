@@ -22,7 +22,8 @@ class SignInController {
       $user = $this->userModel->getUserByPseudo($pseudo);
       if ($user !== null && $motDePasse === $user->getMotDePasse()) {
         session_start();
-        $_SESSION['user'] = $user;
+        //$_SESSION['user'] = $user;
+        $_SESSION['pseudo'] = $pseudo;
         header("Location: ../View/home.php");
         exit();
       } else {

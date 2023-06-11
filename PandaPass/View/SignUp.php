@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Key Of Happiness</title>
+    <title>PandaPass</title>
     <link rel="stylesheet" type="text/css" href="">
   </head>
   <body>

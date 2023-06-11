@@ -41,3 +41,19 @@ $$ |      $$ |      \$$$$$$  |$$ |\$$$$$$$\  \$$$$  |      $$ |  $$ |$$ |  $$ |$
     - JavaScript
     - HTML
     - CSS
+
+
+il me reste a :
+
+
+- faire le home
+-la barre de navigation
+-l'espace ou sont stocké les mots de passe et afficher, trié par ordre d'ajout (met il y'aura plus de mode)
+-le fait de pouvoir aussi en rajouter et qu'il soit automatiquement ajouter au debut de l'affichage des mots de passe stocké 
+- une page de sécurité avant de les voirs
+- une double authentification lors de la premiere inscription et meme lors de la connection,
+-tout crytpté
+
+
+
+

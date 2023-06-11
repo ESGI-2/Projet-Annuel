@@ -11,15 +11,28 @@
 </head>
 
 <body>
+  <nav>
+  <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="PrintManager.php">Gestionnaire de mot de passe</a></li>
+        <li class="dropdown">
+          <a href="MyProfile.php" class="dropbtn">Mon profil</a>
+          <div class="dropdown-content">
+            <a href="../Public/index.php">Se déconnecter</a>
+          </div>
+        </li>
+      </ul>
+  </nav>
+
   <div class="container">
     <h1 class="title">Générateur de Mot de Passe</h1>
     <h3 class="displayPwd" id="displayPwd">Mot de Passe</h3>
     <form id="generatorForm" class="form">
       <!--! Longueur mot de passe -->
-      <label for="characterAmountNumber">Nombre de charactères :</label>
+      <label for="characterAmountNumber">Nombre de caractères :</label>
       <div class="characterAmount">
         <input type="range" min="1" max="50" value="8" id="characterAmountRange">
-        <!-- Slider pour le nombre de characteres-->
+        <!-- Slider pour le nombre de caractères -->
         <input class="number" type="number" min="8" max="50" value="8" id="characterAmountNumber">
         <!-- Choisir le nombre -->
       </div>
@@ -32,27 +45,15 @@
       <label for="numbers">Nombres :</label>
       <input type="checkbox" id="numbers">
 
-      <!--! Ajout charactères spéciaux -->
-      <label for="symbols">Charactères spéciaux :</label>
+      <!--! Ajout caractères spéciaux -->
+      <label for="symbols">Caractères spéciaux :</label>
       <input type="checkbox" id="symbols">
 
       <button class="button" type="submit">Générer Mot de Passe</button>
     </form>
   </div>
-  <!-- <nav>
-    <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Recherche</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropbtn">Mon profil</a>
-        <div class="dropdown-content">
-          <a href="#">Modifier mon profil</a>
-          <a href="../Public/index.php">Se déconnecter</a>
-        </div>
-      </li>
-    </ul>
-  </nav> -->
-  <!-- <h1>TheKeyOfHappiness</h1>
+
+  <h1>PandaPass</h1>
   <?php foreach ($users as $user): ?>
     <div class="card">
       <h2>
@@ -64,7 +65,8 @@
         <input type="submit" name="like" value="Liker">
       </form>
     </div>
-  <?php endforeach; ?> -->
+  <?php endforeach; ?>
+
 </body>
 
 </html>

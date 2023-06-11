@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mer. 03 mai 2023 à 20:03
+-- Généré le : dim. 11 juin 2023 à 21:36
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -20,6 +20,31 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `TheKeyToHappiness`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `manager`
+--
+
+CREATE TABLE `manager` (
+  `id` int(16) NOT NULL,
+  `pseudo` varchar(255) DEFAULT NULL,
+  `identifiant` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `manager`
+--
+
+INSERT INTO `manager` (`id`, `pseudo`, `identifiant`, `password`, `url`) VALUES
+(1, 'cams', '1234', '12345', 'efjhzjefh'),
+(2, NULL, 'aaaaaa', 'aaa', 'aaaaaaaaaaaaaa'),
+(3, NULL, 'dddddddd', 'dddddddddddd', 'dddddddd'),
+(4, NULL, 'dddddddd', 'dddddddddddd', 'dddddddd'),
+(5, 'cams', 'testid', 'testmdp', 'test');
 
 -- --------------------------------------------------------
 
@@ -45,6 +70,12 @@ INSERT INTO `user` (`id`, `pseudo`, `mot_de_passe`) VALUES
 --
 
 --
+-- Index pour la table `manager`
+--
+ALTER TABLE `manager`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `user`
 --
 ALTER TABLE `user`
@@ -53,6 +84,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT pour les tables déchargées
 --
+
+--
+-- AUTO_INCREMENT pour la table `manager`
+--
+ALTER TABLE `manager`
+  MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `user`
