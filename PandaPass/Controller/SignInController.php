@@ -24,7 +24,7 @@ class SignInController {
         session_start();
         //$_SESSION['user'] = $user;
         $_SESSION['pseudo'] = $pseudo;
-        header("Location: ../View/home.php");
+        header("Location: ../View/Home.php");
         exit();
       } else {
         // Authentification échouée

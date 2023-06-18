@@ -35,7 +35,7 @@ class SignUpController {
         $this->userModel->createUser($user);
 
         // Redirection vers la page d'accueil
-        include '../View/home.php';
+        include '../View/Home.php';
         exit();
       } else {
         // Affichage des erreurs

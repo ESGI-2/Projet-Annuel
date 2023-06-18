@@ -15,18 +15,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
   <head>
     <meta charset="utf-8">
-    <title>PandaPass</title>
-    <link rel="stylesheet" type="text/css" href="">
+    <title>Inscription</title>
+    <link href="../Public/css/SignUpStyle.css" rel="stylesheet"/>
   </head>
-  <body>
-<form method="post" enctype="multipart/form-data">
-  <label for="pseudo">Pseudo :</label>
-  <input type="text" name="pseudo" required><br>
-  
-  <label for="mot_de_passe">Mot de passe :</label>
-  <input type="password" name="mot_de_passe" required><br>
 
-  <input type="submit" name="submit" value="S'inscrire">
-</form>
-</body>
+  <body>
+    <div class="container">
+      <h1>Inscription</h1>
+
+      <form method="post" enctype="multipart/form-data">
+        <div class="input_box">
+          <input type="text" name="pseudo" required />
+          <span></span>
+          <label for="pseudo">Nom d'utilisateur</label>
+        </div>
+
+        <div class="input_box">
+          <input type="password" id="pwd" name="mot_de_passe" required />
+          <span></span>
+          <label for="mot_de_passe">Mot de passe</label>
+        </div>
+
+        <input type="submit" name="submit" value="S'inscrire" />
+      </form>
+    </div>
+  </body>
 </html>
