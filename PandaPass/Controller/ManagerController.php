@@ -3,14 +3,17 @@ require_once '../Model/Manager.php';
 require_once '../Model/ManagerModel.php';
 
 //page d'inscription
-class ManagerController {
+class ManagerController
+{
   private $managerModel;
 
-  public function __construct() {
+  public function __construct()
+  {
     $this->managerModel = new ManagerModel();
   }
 
-  public function registerManager() {
+  public function registerManager()
+  {
     // Vérification de la soumission du formulaire
     if (isset($_POST['submit'])) {
       // Récupération des données du formulaire
@@ -28,7 +31,7 @@ class ManagerController {
         $errors[] = 'Le champ identifiant est obligatoire'; //Gestion d'erreur
       }
       if (empty($motDePasse)) {
-        $errors[] = 'Le champ mot de passe est obligatoire';//Gestion d'erreur
+        $errors[] = 'Le champ mot de passe est obligatoire'; //Gestion d'erreur
       }
       if (empty($url)) {
         $errors[] = 'Le champ url est obligatoire'; //Gestion d'erreur
@@ -37,13 +40,13 @@ class ManagerController {
       // Enregistrement de l'utilisateur s'il n'y a pas d'erreurs
       if (empty($errors)) {
         // Création d'une instance de User
-        $manager = new Manager($pseudo,$identifiant,$motDePasse,$url);
+        $manager = new Manager($pseudo, $identifiant, $motDePasse, $url);
 
         // Enregistrement de l'utilisateur dans la base de données
         $this->managerModel->createManager($manager);
 
         // Redirection vers la page d'accueil
-        include '../View/home.php';
+        include '../View/Home.php';
         exit();
       } else {
         // Affichage des erreurs
@@ -51,7 +54,7 @@ class ManagerController {
         include '../View/SignUp.php';
       }
     } else {
-    // Affichage du formulaire d'inscription
+      // Affichage du formulaire d'inscription
       include '../View/SignUp.php';
     }
   }

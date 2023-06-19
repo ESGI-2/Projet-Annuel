@@ -3,7 +3,7 @@ require_once '../Model/Users.php';
 require_once '../Model/UsersModel.php';
 
 //page_de_connexion
-class SignInController
+class SignSecureController
 {
   private $userModel;
 
@@ -27,16 +27,16 @@ class SignInController
         session_start();
         //$_SESSION['user'] = $user;
         $_SESSION['pseudo'] = $pseudo;
-        header("Location: ../View/Home.php");
+        header("Location: ../View/PrintManager.php");
         exit();
       } else {
         // Authentification échouée
         $errorMessage = 'Le pseudo ou le mot de passe est incorrect';
       }
     }
-    include '../View/SignIn.php';
+    include '../View/SignSecure.php';
   }
 }
-$controller = new SignInController();
+$controller = new SignSecureController();
 $controller->loginUser();
 ?>

@@ -3,13 +3,13 @@
 <html>
 
 <head>
-  <title>Connexion</title>
-  <link href="../Public/css/SignInStyle.css" rel="stylesheet" />
+  <title>Gestionnaire</title>
+  <link href="../Public/css/SignSecureStyle.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
-    <h1>Connexion</h1>
+    <h1>Connexion gestionnaire</h1>
 
     <?php if (isset($_POST['submit']) && $errorMessage !== null): ?>
       <p>
@@ -17,7 +17,7 @@
       </p>
     <?php endif; ?>
 
-    <form method="POST" action="../Controller/SignInController.php">
+    <form method="POST" action="../Controller/SignSecureController.php">
       <div class="input_box">
         <input type="text" name="pseudo" required />
         <span></span>

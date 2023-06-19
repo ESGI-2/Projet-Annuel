@@ -1,9 +1,11 @@
 <?php
 
-class Database {
+class Database
+{
   private $pdo;
 
-  public function __construct() {
+  public function __construct()
+  {
     $host = 'localhost';
     $db = 'TheKeyToHappiness';
     $user = 'root';
@@ -17,10 +19,11 @@ class Database {
     ];
 
     $this->pdo = new PDO($dsn, $user, $password, $options);
-   // echo "test";
+    // echo "test";
   }
 
-  public function getInstance() {
+  public function getInstance()
+  {
     return $this->pdo;
   }
 }

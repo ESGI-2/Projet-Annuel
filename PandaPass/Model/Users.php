@@ -1,36 +1,44 @@
 <?php
-class Users {
+class Users
+{
   private $id;
   private $pseudo;
   private $mot_de_passe;
 
-  public function __construct($pseudo,$mot_de_passe,$id = null) {
+  public function __construct($pseudo, $mot_de_passe, $id = null)
+  {
     $this->id = $id;
     $this->pseudo = $pseudo;
     $this->mot_de_passe = $mot_de_passe;
   }
 
-  public function getId() {
+  public function getId()
+  {
     return $this->id;
   }
 
-  public function getPseudo() {
+  public function getPseudo()
+  {
     return $this->pseudo;
   }
 
-  public function getMotDePasse() {
+  public function getMotDePasse()
+  {
     return $this->mot_de_passe;
   }
 
-  public function setId($id) {
+  public function setId($id)
+  {
     $this->id = $id;
   }
 
-  public function setPseudo($pseudo) {
+  public function setPseudo($pseudo)
+  {
     $this->pseudo = $pseudo;
   }
 
-  public function setMotDePasse($mot_de_passe) {
+  public function setMotDePasse($mot_de_passe)
+  {
     $this->mot_de_passe = $mot_de_passe;
   }
 }

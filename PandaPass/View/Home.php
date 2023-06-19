@@ -15,11 +15,11 @@
       <nav>
         <ul class="nav__links">
           <li class="home"><a href="#">Home</a></li>
-          <li><a href="PrintManager.php">Gestionnaire de mot de passe</a></li>
+          <li><a href="../Controller/SignSecureController.php">Gestionnaire de mot de passe</a></li>
           <li><a href="MyProfile.php">Mon profil</a></li>
         </ul>
       </nav>
-      <a href="../Public/index.php" class="deconnexion">Se déconnecter</a>
+      <a href="Welcome.php" class="deconnexion">Se déconnecter</a>
     </header>
 
     <div class="line"></div>
@@ -70,12 +70,23 @@
 
     <div class="texteGestionnaire">
       <h1>Gérez vos mots de passes</h1>
-      <p>
-        en toute sécurité avec notre gestionnaire Panda Pass.
-      </p>
+      <p>en toute sécurité avec notre gestionnaire Panda Pass.</p>
     </div>
-    <a href="PrintManager.php" class="buttonGestionnaire"
-      >Gestionnaire de mots de passe</a
-    >
+    <div class="buttonGestionnaire">
+      <a href="../Controller/SignSecureController.php">Gestionnaire de mots de passe</a>
+    </div>
+
+    <footer>
+      <div class="footerContent">
+        <h2>Panda Pass</h2>
+      </div>
+      <div class="footerBottom">
+        <p>
+          copyright &copy;2023 Panda Pass. Fait par
+          <span>Denisa Dudas & Camillia Hammou</span>
+        </p>
+      </div>
+    </footer>
+
   </body>
 </html>

@@ -2,7 +2,7 @@
 require_once '../Model/ManagerModel.php';
 
 $managerModel = new ManagerModel();
-$pseudo = 'cams'; // Remplacez "votre_pseudo" par le pseudo que vous recherchez
+$pseudo = 'cams';
 
 $managers = $managerModel->getManager();
 
@@ -21,7 +21,7 @@ foreach ($managers as $manager) {
 
 <form action="../Controller/AjouterManager.php" method="POST">
   <input type="hidden" name="pseudo" value="<?php echo $pseudo; ?>">
-  
+
   <label for="url">URL :</label>
   <input type="text" name="url" id="url" required><br>
 

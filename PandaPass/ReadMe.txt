@@ -43,17 +43,14 @@ $$ |      $$ |      \$$$$$$  |$$ |\$$$$$$$\  \$$$$  |      $$ |  $$ |$$ |  $$ |$
     - CSS
 
 -----------------------------------------------------------------------------------------------------
-(dudas) j'ai fait :
+(dudas) j'ai fini :
 - design :
     - page welcome
     - page home
     - page connexion et inscription
+    - page connexio gestionnaire
 
 - j'ai egalement ajouter la page welcome
-
-Reste a faire:
-- suite page welcome
-- navigation page home (la deconnexion et le gestionnaire marchait pas chez moi, a check)
 
 -----------------------------------------------------------------------------------------------------
 

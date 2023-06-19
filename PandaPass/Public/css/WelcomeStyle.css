@@ -10,7 +10,6 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: #e9f3ed;
 }
 
@@ -35,7 +34,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 5px 5%;
-  /* margin-bottom: 100px; */
   background-color: #028f67;
 }
 
@@ -113,18 +111,23 @@ header {
 .line {
   width: 100%;
   height: 5px;
+  position: absolute;
   background-color: #fff;
+  z-index: 1;
 }
+
 .container {
   width: 100%;
   height: 500px;
+  position: relative;
   background-color: #028f67;
 }
 
 .texte {
   margin-left: 200px;
-  margin-top: 100px;
-  position: fixed;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 22px;
   color: #fff;
 }
@@ -156,9 +159,10 @@ header {
 .generateur {
   width: 50%;
   height: 450px;
-  margin-top: 50px;
   margin-left: 50%;
-  position: fixed;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
   flex-direction: column;
   background-color: #028f67;
   color: #fff;
@@ -170,6 +174,7 @@ header {
   font-size: 30px;
 }
 
+
 .displayPwd {
   display: flex;
   justify-content: center;
@@ -177,11 +182,11 @@ header {
   margin-left: 120px;
   height: 2rem;
   width: 70%;
-  border: 1px solid #333;
+  border: none;
   padding: 1rem;
   border-radius: 0.5rem;
   word-break: break-all;
-  background-color: #fff;
+  background-color: #a3c8be;
   color: black;
 }
 
@@ -330,3 +335,41 @@ label {
   background-color: #ffffff33;
 }
 /* fin style générateur de mot de passes */
+
+/* style texte 2 */
+.texte2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  color: #028f67;
+}
+/* fin style texte 2 */
+
+/* footer style*/
+footer {
+  background-color: #0f1311;
+  padding: 20px;
+  text-align: center;
+  color: #a3c8be;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footerContent h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+/* fin footer style*/

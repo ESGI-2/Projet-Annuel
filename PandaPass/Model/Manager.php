@@ -1,12 +1,14 @@
 <?php
-class Manager {
+class Manager
+{
   private $id;
   private $pseudo;
   private $identifiant;
   private $mot_de_passe;
   private $url;
 
-  public function __construct($pseudo,$identifiant, $mot_de_passe, $url,$id = null) {
+  public function __construct($pseudo, $identifiant, $mot_de_passe, $url, $id = null)
+  {
     $this->id = $id;
     $this->pseudo = $pseudo;
     $this->identifiant = $identifiant;
@@ -14,39 +16,49 @@ class Manager {
     $this->url = $url;
   }
 
-  public function getId() {
+  public function getId()
+  {
     return $this->id;
   }
 
-  public function getPseudo() {
+  public function getPseudo()
+  {
     return $this->pseudo;
   }
-  public function getIdentifiant() {
+  public function getIdentifiant()
+  {
     return $this->identifiant;
   }
-  public function getMotDePasse() {
+  public function getMotDePasse()
+  {
     return $this->mot_de_passe;
   }
 
-  public function getUrl() {
+  public function getUrl()
+  {
     return $this->url;
   }
 
-  public function setId($id) {
+  public function setId($id)
+  {
     $this->id = $id;
   }
 
-  public function setPseudo($pseudo) {
+  public function setPseudo($pseudo)
+  {
     $this->pseudo = $pseudo;
   }
 
-  public function setIdentifiant($identifiant) {
+  public function setIdentifiant($identifiant)
+  {
     $this->identifiant = $identifiant;
   }
-  public function setMotDePasse($mot_de_passe) {
+  public function setMotDePasse($mot_de_passe)
+  {
     $this->mot_de_passe = $mot_de_passe;
   }
-  public function setUrl($url) {
+  public function setUrl($url)
+  {
     $this->url = $url;
   }
 }
